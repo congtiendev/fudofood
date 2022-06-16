@@ -1,0 +1,121 @@
+.banner__product {
+    height: 500px;
+    width: 1277px;
+    border-radius: 0px;
+    margin: 48px auto 48.5px auto;
+}
+
+.banner__product img {
+    width: 100%;
+    height: 100%;
+}
+
+.sign-in {
+    color: #F54748;
+}
+
+.sign-up {
+    background-color: #F54748;
+}
+
+.sign-up {
+    color: #fff;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.products__food-list {
+    margin-bottom: 56.83px;
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+}
+
+.products__food-menu ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.products__food-menu ul li {
+    list-style: none;
+    transition: all 0.7s;
+}
+
+.products__food-menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.products__food-menu ul li:hover {
+    transform: scale(1.1);
+}
+
+.products__food-menu ul li a:hover {
+    color: #F54748;
+}
+
+.products__food-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.products__food-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 47px 40px;
+}
+
+.products__food-item img {
+    height: 196.5066680908203px;
+    width: 289.2578125px;
+    border-radius: [object Object]px;
+}
+
+.products__food-item--title {
+    height: 52px;
+    margin-top: 24.55px;
+    margin-bottom: 23.94px;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+}
+
+.products__food-item--price {
+    color: #F54748;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+}
+
+.products__food-item button {
+    margin-top: 32px;
+    height: 31.171875px;
+    width: 290px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    letter-spacing: 0.005em;
+    transition: all 0.7s;
+}
+
+.products__food-item button:hover {
+    background-color: #F54748;
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}

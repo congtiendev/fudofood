@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/detail.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/products.css">
+    <link rel="stylesheet" href="src/css/singnin.css">
+    <link rel="stylesheet" href="src/css/reponsive.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img clas="header__login-logo" src="src/img/index/Fudo..png" alt=""></a>
+        </header>
+        <main>
+            <div class="form__login">
+                <h2 class="wellcome-login">Welcome back</h2>
+                <h1 class="login__title">Login to your account</h1>
+
+                <form action="" class="form__login-form" method="post" onsubmit="return checkSignIn();">
+                    <div class="label__login">
+                        <label for="">Email</label>
+                    </div>
+                    <input placeholder="John.snow@gmail.com" type="email" name="email" id="email">
+                    <span id="email-error"></span>
+                    <div class="label__login">
+                        <label for="">Password</label>
+                    </div>
+                    <input placeholder="*********" type="password" name="password" id="password">
+                    <span id="password-error"></span>
+                    <button class="form__login-btn" type="submit">Login now</button>
+                    <button class=" form__login-btn-gg" data-onsuccess="onSignIn" type="button"><img src="src/img/login/iconfinder_Google_1298745 1.png" alt="">Or sign-in with google</button>
+                </form>
+
+                <div class="form__login-footer">
+                    <a class="forgot-password" href="#">Forgot password?</a>
+                    <p>Dont have an account? <a href="#">Join free today</a></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="src/js/sign-in-up.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+
+</html>

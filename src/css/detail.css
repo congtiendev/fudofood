@@ -1,0 +1,132 @@
+.hamburger__product {
+    width: 100%;
+    margin-top: 129px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.hamburger__product img {
+    width: 620px;
+    height: 421.2px;
+}
+
+.hamburger__product-title h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.8rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hamburger__product-title h2 {
+    margin-top: 20px;
+    color: #F54748;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+}
+
+.hamburger__product-title p {
+    margin-top: 30px;
+    color: #111928;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+
+.hamburger__product-search {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.hamburger__product-search input {
+    opacity: 80%;
+    height: 42px;
+    width: 180px;
+    padding-left: 15px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: -0.02em;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hamburger__product-search button {
+    border: none;
+    font-family: Inter;
+    font-style: Semi Bold;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    height: 42px;
+    width: 110px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    letter-spacing: 0.005em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* ----------------------- */
+
+.related__products {
+    width: 100%;
+    margin-bottom: 96px;
+}
+
+.related__products-title {
+    margin-top: 95.8px;
+    margin-bottom: 32px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.9rem;
+    letter-spacing: 0em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.related__products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.related__products-item img {
+    height: 271.0597839355469px;
+    width: 399px;
+    border-radius: [object Object]px;
+}
+
+.related__products-item-title {
+    margin-top: 24px;
+    margin-bottom: 11.94px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    letter-spacing: 0em;
+}
+
+.related__products-item-price {
+    margin-bottom: 20px;
+    color: #F54748;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+}
+
+.related__products-item button {
+    border: none;
+    background-color: black;
+    color: white;
+    height: 42px;
+    width: 100%;
+    border-radius: 6px;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    letter-spacing: 0.005em;
+}

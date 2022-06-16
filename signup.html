@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/detail.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/products.css">
+    <link rel="stylesheet" href="src/css/singnin.css">
+    <link rel="stylesheet" href="src/css/reponsive.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img clas="header__login-logo" src="src/img/index/Fudo..png" alt=""></a>
+        </header>
+        <main>
+            <div class="form__login">
+                <h2 class="wellcome-login">Welcome to Fudo</h2>
+                <h1 class="login__title">Create Account</h1>
+
+                <form action="" class="form__login-form" method="post">
+                    <div class="label__login">
+                        <label for="">Email</label>
+                    </div>
+                    <input placeholder="John.snow@gmail.com" type="email" name="email" id="email">
+                    <span id="email-error"></span>
+
+
+                    <div class="label__login">
+                        <label for="">Full Name</label>
+                    </div>
+                    <input placeholder="John.snow" type="text" name="email" id="full-name">
+                    <span id="full-name-error"></span>
+                    <div class="label__login">
+                        <label for="">Password</label>
+                    </div>
+                    <input placeholder="*********" type="password" name="password" id="password">
+
+                    <span id="password-error"></span>
+                    <div class="label__login">
+                        <label for="">Re-Password</label>
+                    </div>
+                    <input placeholder="*********" type="password" name="password" id="re-password">
+                    <span id="re-password-error"></span>
+
+                    <button class="form__login-btn create-account" type="submit">Create Now</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="src/js/sign-in-up.js"></script>
+</body>
+
+</html>

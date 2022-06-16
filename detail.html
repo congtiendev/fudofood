@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/detail.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/products.css">
+    <link rel="stylesheet" href="src/css/reponsive.css">
+    <title>Details</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header__logo">
+                <a href="index.html"><img src="src/img/index/Fudo..png" alt="" class="header__logo-img"></a>
+            </div>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="menu__list-item ">
+                        <a href="index.html" class="menu__item-link">Home</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="product.html" class="menu__item-link">Product</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a style="color: #F54748;" href="detail.html" class="menu__item-link">About Us</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="" class="menu__item-link">Contact</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="blogg.html" class="menu__item-link">Blogg</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__authenticate">
+
+                <a href="#" class="header__authenticate-cart">
+                    <img src="src/img/index/cart.png" alt="" class="header__authenticate-cart--img">
+                    <div id="cart">
+                        <div class="cart__list">
+                            <div class="cart__list-item">
+                                <div class="cart__list-item-img">
+                                    <img src="src/img/index/Mask Group (1).png" alt="" class="cart__list-item-img--img">
+                                </div>
+                                <div class="cart__list-item-info">
+
+                                    <div class="cart__list-item-info-name">
+                                        <h3 class="cart__list-item-info-name--name">Fresh and Healthy Mixed Mayonnaise Salad</h3>
+                                    </div>
+
+                                    <div class="cart__list-item-info-price">
+                                        <p class="cart__list-item-info-price">$100</p>
+                                    </div>
+
+                                    <div class="cart__list-item-info-amount">
+                                        <button onclick="decrement()">-</button>
+                                        <input id="demoInput" type="number" min="1" value="1">
+                                        <button onclick="increment()">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <button class="header__authenticate-btn sign-in">Sign In</button>
+                <button class="header__authenticate-btn sign-up">Sign Up</button>
+            </div>
+        </header>
+        <!-- Nav Mobile -->
+        <div class="header__responsive">
+            <label for="input__responsive" class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+            </label>
+            <input type="checkbox" hidden class="input__responsive-nav" id="input__responsive">
+            <div class="logo__responsive">
+                <a href="index.html"><img src="./src/img/index/Fudo..png" alt=""></a>
+            </div>
+            <div class="authenticate__responsive">
+                <img src="./src/img/index/Cart.png" alt="">
+            </div>
+            <label for="input__responsive" class="header__overlay"></label>
+            <nav class="header__menu-responsive">
+                <label for="input__responsive" class="header__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a style="color: #F54748;" href="detail.html">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="hamburger__product">
+                <!-- <div class="hamburger__product-title">
+                    <h1>Big and Juicy Wagyu Beef Cheeseburger</h1>
+                    <h2 class="hamburger__product-price">$30</h2>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+                        mi vitae est. Mauris placerat eleifend leo.</p>
+                    <div class="hamburger__product-search">
+                        <input type="text" placeholder="Quantity">
+                        <button class="hamburger__product-search--btn">
+                            Add To Cart
+                            </button>
+                    </div>
+                </div>
+                <div class="hamburger__product-img">
+                    <img src="src/img/detail/hamburger.png" alt="">
+                </div> -->
+
+            </div>
+            <div class="related__products">
+                <h1 class="related__products-title">Related Products</h1>
+                <div class="related__products-list">
+                    <div class="related__products-item">
+                        <img src="src/img/detail/Mask Group.png" alt="">
+                        <h1 class="related__products-item-title">Fresh and Healthy Mixed Mayonnaise Salad</h1>
+                        <h2 class="related__products-item-price">$30</h2>
+                        <button type="">Add To Cart</button>
+                    </div>
+
+                    <div class="related__products-item">
+                        <img src="src/img/detail/Mask Group (1).png" alt="">
+                        <h1 class="related__products-item-title">The Creamiest Creamy Chicken</h1>
+                        <h2 class="related__products-item-price">$30</h2>
+                        <button type="">Add To Cart</button>
+                    </div>
+
+                    <div class="related__products-item">
+                        <img src="src/img/detail/Mask Group (2).png" alt="">
+                        <h1 class="related__products-item-title">Fruity Pancake with Orange & Blueberry</h1>
+                        <h2 class="related__products-item-price">$30</h2>
+                        <button type="">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="src/img/index/Fudo..png" alt="" class="footer__logo-img">
+            <div class="footer__menu">
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">Home</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">Product</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a style="color:#F54748;" href="detail.html" class="footer__menu-link">About Us</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

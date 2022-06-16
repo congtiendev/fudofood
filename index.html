@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="src/css/detail.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/products.css">
+    <link rel="stylesheet" href="src/css/reponsive.css">
+    <title>Index</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header__logo">
+                <a href="index.html"><img src="src/img/index/Fudo..png" alt="" class="header__logo-img"></a>
+            </div>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="menu__list-item">
+                        <a style="color: #F54748;" href="index.html" class="menu__item-link">Home</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="product.html" class="menu__item-link">Product</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="detail.html" class="menu__item-link">About Us</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#index-contact" class="menu__item-link">Contact</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="blogg.html" class="menu__item-link">Blogg</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__authenticate">
+
+                <a href="#" class="header__authenticate-cart">
+                    <img src="src/img/index/cart.png" alt="" class="header__authenticate-cart--img">
+                    <div id="cart">
+
+                    </div>
+                </a>
+
+                <button id="sign-in-btn" class="header__authenticate-btn sign-in"><a href="signup.html">Sign In</a></button>
+                <button class="header__authenticate-btn sign-up"><a href="signup.html">Sign Up</a></button>
+            </div>
+        </header>
+        <!-- Nav Mobile -->
+        <div class="header__responsive">
+            <label for="input__responsive" class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+            </label>
+            <input type="checkbox" hidden class="input__responsive-nav" id="input__responsive">
+            <div class="logo__responsive">
+                <a href="index.html"><img src="./src/img/index/Fudo..png" alt=""></a>
+            </div>
+            <div class="authenticate__responsive">
+                <img src="./src/img/index/Cart.png" alt="">
+            </div>
+            <label for="input__responsive" class="header__overlay"></label>
+            <nav class="header__menu-responsive">
+                <label for="input__responsive" class="header__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+                </label>
+                <ul>
+                    <li><a style="color: #F54748;" href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="detail.html">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a style="color: #F54748;" href="signin.html">Sign In</a></li>
+                    <li><a style="color: #fff;" href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="banner">
+                <div class="banner__info">
+                    <p class="quality-food">Quality Food</p>
+                    <div class="banner__info-title">
+                        <h1>Fastest <br><span>Delivery</span> &<br> Easy <span>Pickup</span></h1>
+                    </div>
+
+
+                    <p class="banner__info-title--sub">Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
+                    <div class="banner__search">
+                        <input type="text" class="banner__search-input" placeholder="Enter your delivery location">
+                        <button class="banner__search-btn">Discover</button>
+                    </div>
+                </div>
+                <div class="banner__img">
+                    <img src="src/img/index/banner-img.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="popular-product">
+                <div class="title__popular">
+                    <h1>Our Popular Dishes</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+                </div>
+                <div class="filter">
+                    <select name="" id="filter-select">
+                        <option value="" hidden>Lọc giá</option>
+                        <option value="all">Tất cả</option>
+                        <option value="under30">Dưới 30 $</option>
+                        <option value="over30">Trên 30 $</option>
+                    </select>
+                </div>
+
+                <div class="product">
+
+                </div>
+
+                <div class="category">
+                    <div class="category__title">
+                        <h1>Categories</h1>
+                        <button>View All Categories</button>
+                    </div>
+                    <div class="category__foods">
+                        <div class="category__foods-item">
+                            <img src="src/img/index/Group 890.png" alt="" srcset="">
+                            <p>Breakfast</p>
+                        </div>
+
+                        <div class="category__foods-item">
+                            <img src="src/img/index/Group 879.png" alt="" srcset="">
+                            <p>Vegan</p>
+                        </div>
+
+                        <div class="category__foods-item">
+                            <img src="src/img/index/Group 891.png" alt="" srcset="">
+                            <p>Meet</p>
+                        </div>
+
+                        <div class="category__foods-item">
+                            <img src="src/img/index/Group 892.png" alt="" srcset="">
+                            <p>Dessert</p>
+                        </div>
+
+                        <div class="category__foods-item">
+                            <img src="src/img/index/Group 893.png" alt="" srcset="">
+                            <p>Lunch</p>
+                        </div>
+
+                        <div class="category__foods-item">
+                            <img src="src/img/index/Group 894.png" alt="" srcset="">
+                            <p>Chocolate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="index-contact">
+                <h1 class="contact__title">Contact us</h1>
+                <form action="" class="contact__form-form" method="post">
+                    <div class="form__input-info">
+                        <div class="form-name-sub">
+                            <div><label>NAME</label></div>
+                            <input type="text" placeholder="Enter your name" class="form__input-name" id="contact-name">
+                            <span id="contact-name-error"></span>
+                            <div><label>SUBJECT</label></div>
+                            <input type="text" placeholder="Enter subject" class="form__input-subject" id="contact-subject">
+                            <span id="contact-subject-error"></span>
+
+                        </div>
+                        <div class="form-email-Enquiry">
+                            <div><label>EMAIL ADDRESS</label></div>
+                            <input type="email" placeholder="Your email address..." class="form__input-email" id="contact-email" id="">
+                            <span id="contact-email-error"></span>
+                            <div><label>ENQUIRY TYPE</label></div>
+                            <select type="text" placeholder="Advertising" class="form__input-enquiry" id="contact-select">
+                                <option value="0">Advertising</option>
+                                <option value="advertising">Advertising</option>
+                                <option value="enquiry">Enquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span id="contact-select-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-message" id="contact-message">
+                        <div><label>MESSAGE</label></div>
+                        <textarea class="form__input-message" placeholder="Enter your messages..."></textarea>
+                    </div>
+                    <button type="submit" class="form__submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <img src="src/img/index/Fudo..png" alt="" class="footer__logo-img">
+            <div class="footer__menu">
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a style="color:#F54748;" href="" class="footer__menu-link">Home</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">Product</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="detail.html" class="footer__menu-link">AboutUs</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__menu-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function increment() {
+            document.getElementById('demoInput').stepUp();
+        }
+
+        function decrement() {
+            document.getElementById('demoInput').stepDown();
+        }
+    </script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/contact.js"></script>
+
+</body>
+
+</html>
